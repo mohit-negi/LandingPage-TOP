@@ -1,88 +1,208 @@
-body{
-    background-color: #1f2937;
-}
-header{
-    background-color: #1f2937;
-    display: flex;
-    flex-direction: column;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-}
-.header_content{
-    display: flex;
-    flex-wrap: wrap;
-}
-.header_content h3{
-    font-size: 48px;
-    font-weight: bolder;
-    color: #f9faf8;
-}
-.header_content p{
-    font-size: 18px;
-    color: #e5e7eb;
+@font-face {
+    font-family: 'Roboto',sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+  }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 a{
+    color: black;
     text-decoration: none;
-    color: #e5e7eb;
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0;
 }
 li{
     list-style: none;
 }
-.header_logo a{
-    font-size: 24px;
-    color: #f9faf8;
-    padding-left: 20px;
-}
-.links{
-    display: flex;
-    justify-content: end;
-    gap: 25px;
-    color: #efe7eb;
+li a{
     font-size: 18px;
+    color: #e5e7eb;
 }
-
-
-.header_content{
+/* copied - To not let the header flow */
+.header_container{
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: visible;
+}
+.navbar{
+    background-color: #1f2937;
+    height: 70px;
+    padding: 0 30px;
+}
+.navbar h1 a{
+    color: #f9faf8;
+}
+.header_container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;   /* to have maximum height as its container */
+}
+.navbar ul{
     display: flex;
 }
-.header_content img{
-    width: 200px;
-    height: 200px;
+.navbar ul a{
+    padding: 8px;
+    margin: 0 10px;
 }
+.navbar ul a:hover{
+    color: #becada;
+    border-bottom: 3px solid #becada;
+}
+.showcase{
+    height: 500px;
+    background-color: #1f2937;
+}
+.showcase p{
+    margin-bottom: 30px;
+}
+.showcase img{
+    width: 400px;
+    height: 400px;
+}
+/* image by Photo by <a href="https://pixnio.com/flora-plants/crops/leaves-crops-agriculture-lettuce-organic-food-plant-salad-vegetable">Jatuphon Buraphon</a> on <a href="https://pixnio.com/">Pixnio</a> */
 .content{
     display: flex;
+    justify-content: center;
+}
+.left-content,.right-content{
+    position: relative;
+    top: 50px;
+}
+.left-content h1{
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 1000;
+}
+.left-content{
+    color: #becada;
+}
+.left-content{
+    width: 430px;
+    padding: 0 30px;
+}
+.left-content p{
+    position: relative;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+.left-content button{
+    display: flex;
+    justify-content: center;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    width: 80px;
+    height: 30px;
+}
+.showcase p{
+    margin-bottom: 30px;
+}
+.showcase img {
+    max-width:100%;
+    height:auto;
+}
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 12;
+  font-weight: 700;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button:active,
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-position: -20px -20px;
+}
+
+.button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+.image{
+    border-radius:20px;
+    overflow:hidden;
+}
+
+/* CSS for testimonials here */
+
+.testimonial{
+    display: flex;
+    color:#1f2937;
+    padding: 5px;
+}
+.testimonial .content{
+    display: flex;
+    flex-direction: column;
+}
+.testimonial .h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .images_drawer{
     display: flex;
-    width: 100vw;
-    height: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 5px;
+  }
+  .img{
+      background-color: #FFFFFF;
+      width: 200px;
+      height: 150px;
+  }
+  .card{
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1  1 auto;
+  }
+  .card .image{
+    border: 3px solid #3882f6;
+    border-radius: 10px;
 }
-.image1,.image2,.image3,.image4{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
+.card .text{
+    position: relative;
+    display:flex;
+    max-width: 100%;
 }
-img{
-    width: 200px;
-    height: 200px;
-}
-.quote{
-    padding:100px;
-    display: flex;
+@media (max-width: 800px) {
+    .images_drawer{
+      flex-direction: column;
+    }
+  }
+@media (max-width: 500px) {
+  .card{
     flex-direction: column;
-    background-color: #e5e7eb;
-    font-style: italic;
-    font-size: 36px;
-    color: #1f2937;
 }
-.quote .author{
-    display: flex;
-    color:#1f2937;
-    font-style:normal;
-    font-size: 20px;
-    padding: 20px;
-    font-weight: bold;
-    justify-content: end;
 }
