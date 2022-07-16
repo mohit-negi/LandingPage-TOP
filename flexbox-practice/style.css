@@ -1,12 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: blanchedalmond;
 }
-
+/*Edit for navbar starts here*/
 .header{
     display: flex;
     background-color:peru;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px 30px;
     align-items: center;
 }
 .navbar .links{
@@ -19,4 +24,83 @@ body{
 }
 .navbar .links a:hover{
     color: white;
+}
+/* Edits for the showcase starts here */
+.img{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+.showcase .container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: beige;
+} 
+.showcase .content{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    flex-wrap: wrap;
+}
+.showcase .left-content,.showcase .right-content{
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+}
+.showcase .showcase-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px
+}
+.showcase-text p,.showcase-text h1{
+    padding: 10px;
+}
+.right-content .showcase-image{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px
+}
+.right-content .image-text{
+    display: flex;
+    padding-top: 10px;
+    width: 200px;
+}
+/* Edits for the testimonials starts here */
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+.testimonial{
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+}
+.testimonial-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7px; 
+}
+.card{
+    display: flex;
+    background-color: aquamarine;
+    flex-direction: column;
+    border: 1px solid red;
+    padding: 0;
+    width: 200px;
+    max-height: 100%;
+}
+.card .image-text{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.card .image{
+    display: flex;
+    justify-content: center;
 }
