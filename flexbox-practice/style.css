@@ -1,0 +1,22 @@
+body{
+    background-color: blanchedalmond;
+}
+
+.header{
+    display: flex;
+    background-color:peru;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.navbar .links{
+    display: flex;
+    gap: 8px;
+}
+.navbar .links a{
+    text-decoration: none;
+    color: black;
+}
+.navbar .links a:hover{
+    color: white;
+}
