@@ -187,3 +187,19 @@
     font-size: 15px;
     font-weight: bold;
 }
+footer{
+    display: flex;
+    
+}
+.footer{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: #1f2937;
+    height: 80px;
+    width: 100vw;
+}
+.footer-text{
+    padding: 40px;
+    color: #f9faf8;
+}
