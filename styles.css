@@ -164,44 +164,51 @@ li a{
 .testimonial .content{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
-.testimonial .h1{
+.testimonial #testimonial_heading{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .images_drawer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 100%;
-    gap: 5px;
+    gap: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   .img{
       background-color: #FFFFFF;
       width: 200px;
       height: 150px;
   }
-  .card{
+  .testimonial .card{
+      width: 200px;
+      height: 180px;
       display: flex;
-      flex-wrap: wrap;
-      flex: 1  1 auto;
+      flex-direction: column;
+      flex: 1 1 auto;
+      justify-content: center;  
   }
   .card .image{
     border: 3px solid #3882f6;
     border-radius: 10px;
 }
 .card .text{
-    position: relative;
-    display:flex;
-    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 @media (max-width: 800px) {
     .images_drawer{
       flex-direction: column;
     }
   }
-@media (max-width: 500px) {
+@media (max-width: 300px) {
   .card{
     flex-direction: column;
 }
