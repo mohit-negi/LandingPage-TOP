@@ -1,215 +1,205 @@
-@font-face {
-    font-family: 'Roboto',sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-  }
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-a{
-    color: black;
-    text-decoration: none;
-}
-h1{
-    font-size: 30px;
-    font-weight: 600;
-    margin: 10px 0;
-}
-li{
-    list-style: none;
-}
-li a{
-    font-size: 18px;
-    color: #e5e7eb;
-}
-/* copied - To not let the header flow */
-.header_container{
-    margin: 0 auto;
-    max-width: 1200px;
-    overflow: visible;
-}
-.navbar{
-    background-color: #1f2937;
-    height: 70px;
-    padding: 0 30px;
-}
-.navbar h1 a{
-    color: #f9faf8;
-}
-.header_container
-{
+/*Edit for navbar starts here*/
+.header{
     display: flex;
+    background-color: #1f2937;;
     justify-content: space-between;
+    padding: 20px 30px;
     align-items: center;
-    height: 100%;   /* to have maximum height as its container */
 }
-.navbar ul{
+.navbar .links{
     display: flex;
+    gap: 8px;
 }
-.navbar ul a{
-    padding: 8px;
-    margin: 0 10px;
-}
-.navbar ul a:hover{
-    color: #becada;
-    border-bottom: 3px solid #becada;
-}
-.showcase{
-    height: 500px;
-    background-color: #1f2937;
-}
-.showcase p{
-    margin-bottom: 30px;
-}
-.showcase img{
-    width: 400px;
-    height: 400px;
-}
-/* image by Photo by <a href="https://pixnio.com/flora-plants/crops/leaves-crops-agriculture-lettuce-organic-food-plant-salad-vegetable">Jatuphon Buraphon</a> on <a href="https://pixnio.com/">Pixnio</a> */
-.content{
-    display: flex;
-    justify-content: center;
-}
-.left-content,.right-content{
-    position: relative;
-    top: 50px;
-}
-.left-content h1{
+.navbar h1{
+    font-size: 24px;
     color: #f9faf8;
-    font-size: 48px;
-    font-weight: 1000;
 }
-.left-content{
-    color: #becada;
-}
-.left-content{
-    width: 430px;
-    padding: 0 30px;
-}
-.left-content p{
-    position: relative;
+.navbar .links a{
+    text-decoration: none;
     font-size: 18px;
-    color: #e5e7eb;
+    color: #f9faf8;
 }
-.left-content button{
+.navbar .links a:hover{
+    color: #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+/* Edits for the showcase starts here */
+.img{
+    width: 200px;
+    height: 200px;
+    background-color: lightslategrey;
+}
+.showcase .container{
     display: flex;
     justify-content: center;
-    background-color: #3882f6;
+    padding: 50px;
+    background-color: #1f2937;
+} 
+.showcase .content{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    flex-wrap: wrap;
+}
+.showcase .left-content,.showcase .right-content{
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+}
+.showcase .showcase-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px
+}
+.showcase-text h1{
+    color: #f9faf8;
+    font-size: 48px; 
+    padding: 10px;
+}
+.showcase-text p{
     color: #e5e7eb;
-    width: 80px;
-    height: 30px;
-}
-.showcase p{
-    margin-bottom: 30px;
-}
-.showcase img {
-    max-width:100%;
-    height:auto;
-}
-.button {
-  align-items: center;
-  appearance: none;
-  background-color: #3EB2FD;
-  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
-  border-radius: 100px;
-  border-width: 0;
-  box-shadow: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: CircularStd,sans-serif;
-  font-size: 12;
-  font-weight: 700;
-  height: auto;
-  justify-content: center;
-  line-height: 1.5;
-  padding: 6px 20px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color .2s,background-position .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: top;
-  white-space: nowrap;
+    font-size: 18px;
+    padding: 10px;
 }
 
-.button:active,
-.button:focus {
-  outline: none;
+.right-content .showcase-image{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px
 }
-
-.button:hover {
-  background-position: -20px -20px;
+.right-content{
+    display: flex;
+    justify-content: center;
 }
-
-.button:focus:not(:active) {
-  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+.right-content .image-text{
+    display: flex;
+    padding-top: 10px;
+    width: 200px;
+    color: #1f2937;
 }
-.image{
-    border-radius:20px;
-    overflow:hidden;
+.right-content .image-text:hover{
+    color: #e5e7eb;
 }
-
-/* CSS for testimonials here */
-
+/* Edits for the testimonials starts here */
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
 .testimonial{
     display: flex;
-    color:#1f2937;
-    padding: 5px;
-}
-.testimonial .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.testimonial #testimonial_heading{
-    display: flex;
+    background-color: #f9faf8;
     justify-content: center;
     align-items: center;
-
+    margin-top: 20px;
 }
-.images_drawer{
+.testimonial-container{
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    justify-content: space-between;
-    max-width: 100%;
-    gap: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .img{
-      background-color: #FFFFFF;
-      width: 200px;
-      height: 150px;
-  }
-  .testimonial .card{
-      width: 200px;
-      height: 180px;
-      display: flex;
-      flex-direction: column;
-      flex: 1 1 auto;
-      justify-content: center;  
-  }
-  .card .image{
-    border: 3px solid #3882f6;
-    border-radius: 10px;
-}
-.card .text{
-    display: flex;
     flex-wrap: wrap;
-
+    padding: 40px 0px;
+    gap: 10px; 
 }
-@media (max-width: 800px) {
-    .images_drawer{
-      flex-direction: column;
-    }
-  }
-@media (max-width: 300px) {
-  .card{
+.card{
+    display: flex;
+    background-color: white;
     flex-direction: column;
+    border: 2px solid #3882f6;
+    border-radius: 20px;;
+    padding: 10px;
+    width: 200px;
+    max-height: 100%;
 }
+.card .image-text{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.card .image{
+    display: flex;
+    justify-content: center;
+}
+/* quote section starts here */
+.quote{
+    display: flex;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    
+}
+.quote-text{
+    display: flex;
+    padding: 40px 0;
+    flex-direction: column;
+    width: 80vw;
+}
+.quote-text .text{
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+.quote-text .author{
+    display: flex;
+    padding: 10px;
+    justify-content: end;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+/* signup section starts here */
+
+.signup{
+    background-color: #f9faf8;
+}
+.signup-container{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+.signup .content{
+    margin: 40px 0;
+    display: flex;
+    height: 100px;
+    background-color: #3882f6;
+    color:#f9faf8;
+    border-radius: 30px;
+    padding: 30px;
+    align-items: center;
+    gap: 50px;
+}
+.signup button{
+    width: 70px;
+    height: 40px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: 1px solid #f9faf8;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    
+}
+.footer{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: #1f2937;
+    height: 80px;
+    width: 100vw;
+}
+.footer-text{
+    padding: 40px;
+    color: #f9faf8;
 }
